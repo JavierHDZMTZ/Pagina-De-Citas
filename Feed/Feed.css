@@ -1,15 +1,23 @@
-body, html {
+* {
+    margin: 0;
+    border-COLOR:#ffffff2e;
+  }
+  body, html {
     height: 100%;
+    width: 100%;
+    background-color: #520036;
 }
 .contenedor {
     height: 100%;
+    width: 100%;
     display: flex;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 /* Barra lateral de usuario: Foto de perfil, chats, boton de cerrar sesion*/
 /* Seccion de foto de perfil y nombre de usuario*/
 .lateral_USR {
     width: 20%;
+    height: 100%;
     background-color: #541763;
 }
 .PUSR {
@@ -111,9 +119,14 @@ body, html {
   }
   .Feed80 .IMGCent .IM .INFR{
     flex: 0 0 20%;
+    width: 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
+    background-color: #0000006c;
+  }
+  .Feed80 .IMGCent .IM .INFR #infUSR{
+    color: #ffffff;
   }
 #fpizq{
     position: relative;
@@ -156,28 +169,37 @@ body, html {
     height: 55%;
     width: 25%;
     border-radius: 50%;
+    font-size: 200%;
+    text-align: center;
+    border: 1% white;
 }
 
-#siguiente {
-
+.boton{
+    height: auto;
+    width: 100%;
+    font-size: 200%;
+    text-align: center;
+    color: #ffffff;
+    background-color: #B14AED;
 }
 
-#anterior {
-
+.Feed20 .MatchB #match {
+    color: #520036;
+    background-color: #df2935;
 }
 
-#match {
-
+.Feed20 .DescartarB #descartar {
+    color: #520036;
+    background-color: #1e0062;
 }
 
-#descartar {
-
+.Feed20 .InfoB #info {
+    color: #520036;
+    background-color: #B14AED;
 }
 
-#info {
-
-}
-
-#CerrarSesion {
-
+.CTBTN .CerrarS #CerrarSesion {
+    color: #ffffff;
+    background-color: #2d0175;
+    overflow: hidden;
 }
