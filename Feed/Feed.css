@@ -1,122 +1,183 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color: #030061;
-}
-
 body, html {
     height: 100%;
 }
-
 .contenedor {
     height: 100%;
     display: flex;
     background-color: black;
 }
-
+/* Barra lateral de usuario: Foto de perfil, chats, boton de cerrar sesion*/
+/* Seccion de foto de perfil y nombre de usuario*/
 .lateral_USR {
     width: 20%;
     background-color: #541763;
 }
-
-.lateral_USR #fpp {
+.PUSR {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    background-color: rgba(46, 0, 26, 0.466);
+}
+.PUSR img {
+    margin-right: 5%; /* Espacio de separación entre la imagen y el texto */
     width: 15%;
     height: auto;
-    position: relative;
     border-radius: 50%;
 }
-
-.lateral_USR #NPRF {
-    position: relative;
-    left: 25%;
-    bottom: 4%;
+#NPRF {
     color: white;
 }
-
+/* Seccion para chats y boton de cerrar sesion*/
+.CTBTN {
+    display: flex; /* Establece el contenedor principal como un contenedor flexible */
+    flex-direction: column; /* Alinea los divs verticalmente */
+    width: 100%;
+    height: 100%;
+}
+.CTBTN .Chats{
+    width: 100%;
+    height: 100%;
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: center; 
+    align-items: column;
+}
+.CTBTN .CerrarS{
+    display: flex;
+    justify-content: center; 
+}
+/* Seccion para feed central*/
 .Feed_Citas {
-    width: 80%;
-    background-color: #0e000a;
+    display: flex; /* Establece el contenedor principal como un contenedor flexible */
+    flex-direction: column; /* Alinea los divs verticalmente */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .Feed80 {
+    flex: 80%;
+    display: flex; 
+    background-color: #520036;
+  }
+  
+  .Feed20 {
+    flex: 20%;
+    display: flex;
+    background-color: #520036;
+  }
+  .Feed80 .IMGDer{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed80 .IMGIzq{
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed80 .IMGCent{
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .Feed80 .IMGCent .BReg{
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed80 .IMGCent .IM{
+    flex: 0 0 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center; 
     align-items: center;
-    justify-content: center;
-}
-
-.Feed_Citas #fpc2 {
-    width: 35%;
-    height: 60%;
-    border-radius: 5%;
-}
-
-.Feed_Citas #fpc1 {
-    width: 15%;
-    height: 25%;
+  }
+  .Feed80 .IMGCent .BSig{
+    flex: 0 0 10%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed80 .IMGCent .IM .IMAG{
+    flex: 0 0 80%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed80 .IMGCent .IM .INFR{
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+#fpizq{
     position: relative;
-    right: 30%;
-    top: 40%;
-    border-radius: 5%;
+    width: 50%;
+    height: 50%;
+
+}
+#fpcent {
+    width: 70%;
+    height: 90%;
+
+}
+#fpder {
+    position: relative;
+    width: 50%;
+    height: 50%;
 }
 
-.Feed_Citas #fpc3 {
-    width: 15%;
-    height: 25%;
-    position: relative;
-    left: 30%;
-    bottom: 40%;
-    border-radius: 5%;
-}
+.Feed20 .MatchB{
+    flex: 0 0 33%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed20 .InfoB{
+    flex: 0 0 33%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .Feed20 .DescartarB{
+    flex: 0 0 33%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+/* comienzan estilos*/
 
 .boton-redondo {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(67, 228, 13);
+    height: 55%;
+    width: 25%;
     border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 #siguiente {
-    position: relative;
-    bottom: 50%;
-    left: 20%;
+
 }
 
 #anterior {
-    position: relative;
-    bottom: 50%;
-    right: 20%;
+
 }
 
 #match {
-    position: relative;
-    bottom: 23%;
-    left: 10%;
+
 }
 
 #descartar {
-    position: relative;
-    bottom: 25%;
-    right: 10%;
+
 }
 
 #info {
-    position: relative;
-    bottom: 25%;
-}
 
-.Feed_Citas #infUSR {
-    position: relative;
-    bottom: 48%;
-}
-
-.chats {
-    width: 100%;
-    height: 70%;
-    overflow: auto;
 }
 
 #CerrarSesion {
-    position: relative;
-    left: 30%;
-    top: 10%;
+
 }
