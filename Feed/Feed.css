@@ -1,399 +1,205 @@
-
-* {
-    margin: 0;
-    border-COLOR:#ffffff2e;
-  }
-  body, html {
-    height: 100%;
-    width: 100%;
-    background-color: #520036;
+*{
+  margin:0%;
 }
-
-@media (max-width: 1020px) {
-  .lateral_USR {
-    width: 20%;
-    height: 100%;
-    background-color: #541763;
+.contenedor {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgb(255, 255, 255);
 }
-.PUSR {
-    display: flex; /* Establece el contenedor como un contenedor flexible */
-    align-items: center; /* Alinea verticalmente los elementos en el centro */
-    background-color: rgba(46, 0, 26, 0.466);
+body, html {
+  height: 100%;
+  width: 100%;
+  background-color: #520036;
 }
-.PUSR img {
-    margin-right: 5%; /* Espacio de separación entre la imagen y el texto */
-    width: 15%;
-    height: auto;
-    border-radius: 50%;
+.lateral_USR {
+  width: 20%;
+  height: 100%;
+  background-image: linear-gradient(to top, #ff90cf, #541736);
 }
-#NPRF {
-    color: white;
+.CTBTN .Chats {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: column;
 }
-/* Seccion para chats y boton de cerrar sesion*/
-.CTBTN {
-    display: flex; /* Establece el contenedor principal como un contenedor flexible */
-    flex-direction: column; /* Alinea los divs verticalmente */
-    width: 100%;
-    height: 100%;
+.CTBTN .CerrarS {
+  display: flex;
+  justify-content: center; 
 }
-.CTBTN .Chats{
-    width: 100%;
-    height: 100%;
-    flex: 0 0 80%;
-    display: flex;
-    justify-content: center; 
-    align-items: column;
-}
-.CTBTN .CerrarS{
-    display: flex;
-    justify-content: center; 
-}
-/* Seccion para feed central*/
 .Feed_Citas {
-    display: flex; /* Establece el contenedor principal como un contenedor flexible */
-    flex-direction: column; /* Alinea los divs verticalmente */
-    width: 100%;
-    height: 100%;
-  }
-  
-  .Feed80 {
-    flex: 80%;
-    display: flex; 
-    background-color: #520036;
-  }
-  
-  .Feed20 {
-    flex: 20%;
-    display: flex;
-    background-color: #520036;
-  }
-  .Feed80 .IMGDer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-radial-gradient(circle, #220016, #220002 2%);
+}
+.Feed80 .IMGCent .BReg,
+.Feed80 .IMGCent .BSig {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.Feed80 .IMGCent .BReg:hover {
+  transform: translate(-20%, 0%);
+}
+.Feed80 .IMGCent .BSig:hover {
+  transform: translate(20%, 0%);
+}
+.Feed80 .IMGCent .IM {
+  flex: 0 0 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+.Feed80 .IMGCent .IM .IMAG {
+  flex: 0 0 80%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+.Feed80 .IMGCent .IM .INFR {
+  flex: 0 0 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-color: #0000006c;
+}
+.Feed80 .IMGCent .IM .INFR #infUSR {
+  color: #ffffff;
+  top: 20%;
+}
+/*medias bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+@media (max-width: 1020px) {
+  .Feed80 .IMGDer,
+  .Feed80 .IMGIzq {
     flex: 0 0 0%;
     display: flex;
     justify-content: center; 
     align-items: center;
   }
-  .Feed80 .IMGIzq{
-    flex: 0 0 0%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent{
+  .Feed80 .IMGCent {
     flex: 0 0 100%;
     display: flex;
     justify-content: center; 
     align-items: center;
   }
-
-  .Feed80 .IMGCent .BReg{
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM{
-    flex: 0 0 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .BSig{
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM .IMAG{
-    flex: 0 0 80%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM .INFR{
-    flex: 0 0 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: #0000006c;
-  }
-  .Feed80 .IMGCent .IM .INFR #infUSR{
-    color: #ffffff;
-  }
-#fpizq{
-    position: relative;
-    width: 50%;
-    height: 50%;
-
-}
-#fpcent {
-    width: 70%;
-    height: 90%;
-
-}
-#fpder {
-    position: relative;
-    width: 50%;
-    height: 50%;
-}
-
-.Feed20 .MatchB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed20 .InfoB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed20 .DescartarB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-/* comienzan estilos*/
-
-.boton-redondo {
-    height: 30%;
-    width: 40%;
+  .boton-redondo {
+    height: 80%;
+    width: 60%;
     border-radius: 50%;
     font-size: 200%;
     text-align: center;
     border: 1% white;
+  }
 }
-
-.boton{
-    height: auto;
-    width: 100%;
+@media (min-width: 1021px) {
+  .Feed80 .IMGDer,
+  .Feed80 .IMGIzq,
+  .Feed80 .IMGCent {
+    flex: 0 0 33.333%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  .boton-redondo {
+    height: 100%;
+    width: 43%;
+    border-radius: 50%;
     font-size: 200%;
     text-align: center;
-    color: #ffffff;
-    background-color: #B14AED;
+    border: 1% white;
+  }
 }
-
+/*medias bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
+.Feed20 .MatchB,
+.Feed20 .InfoB,
+.Feed20 .DescartarB {
+  flex: 0 0 33%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+#fpizq {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+#fpcent {
+  width: 70%;
+  height: 80%;
+}
+#fpder {
+  position: relative;
+  width: 50%;
+  height: 50%;
+}
+.boton {
+  height: auto;
+  width: 100%;
+  font-size: 200%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #b353eace;
+  border-radius: 30%;
+}
+.boton:hover{
+  background-color: #7a12b7ce;
+}
 .Feed20 .MatchB #match {
-    color: #520036;
-    background-color: #df2935;
+  color: #520036;
+  background-color: #df2935;
 }
-
 .Feed20 .DescartarB #descartar {
-    color: #520036;
-    background-color: #1e0062;
+  color: #520036;
+  background-color: #1e0062;
 }
-
 .Feed20 .InfoB #info {
-    color: #520036;
-    background-color: #B14AED;
+  color: #520036;
+  background-color: #B14AED;
 }
-
+.Feed20 .MatchB #match:hover {
+  background-color: #4e0005;
+}
+.Feed20 .DescartarB #descartar:hover {
+  background-color: #0e0030;
+}
+.Feed20 .InfoB #info:hover {
+  background-color: #320050;
+}
 .CTBTN .CerrarS #CerrarSesion {
-    color: #ffffff;
-    background-color: #2d0175;
-    overflow: hidden;
-}
-}
-.contenedor {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-}
-@media (min-width:1021px){
-  .lateral_USR {
-    width: 20%;
-    height: 100%;
-    background-color: #541763;
+  color: #ffffff;
+  background-color: #520036;
+  overflow: hidden;
+  border-radius: 30%;
 }
 .PUSR {
-    display: flex; /* Establece el contenedor como un contenedor flexible */
-    align-items: center; /* Alinea verticalmente los elementos en el centro */
-    background-color: rgba(46, 0, 26, 0.466);
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.466);
 }
 .PUSR img {
-    margin-right: 5%; /* Espacio de separación entre la imagen y el texto */
-    width: 15%;
-    height: auto;
-    border-radius: 50%;
+  margin-right: 5%;
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+.Feed80 {
+  flex: 80%;
+  display: flex; 
+
+}
+.Feed20 {
+  flex: 20%;
+  display: flex;
 }
 #NPRF {
-    color: white;
-}
-/* Seccion para chats y boton de cerrar sesion*/
-.CTBTN {
-    display: flex; /* Establece el contenedor principal como un contenedor flexible */
-    flex-direction: column; /* Alinea los divs verticalmente */
-    width: 100%;
-    height: 100%;
-}
-.CTBTN .Chats{
-    width: 100%;
-    height: 100%;
-    flex: 0 0 80%;
-    display: flex;
-    justify-content: center; 
-    align-items: column;
-}
-.CTBTN .CerrarS{
-    display: flex;
-    justify-content: center; 
-}
-/* Seccion para feed central*/
-.Feed_Citas {
-    display: flex; /* Establece el contenedor principal como un contenedor flexible */
-    flex-direction: column; /* Alinea los divs verticalmente */
-    width: 100%;
-    height: 100%;
-  }
-  
-  .Feed80 {
-    flex: 80%;
-    display: flex; 
-    background-color: #520036;
-  }
-  
-  .Feed20 {
-    flex: 20%;
-    display: flex;
-    background-color: #520036;
-  }
-  .Feed80 .IMGDer{
-    flex: 0 0 30%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGIzq{
-    flex: 0 0 30%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent{
-    flex: 0 0 40%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
 
-  .Feed80 .IMGCent .BReg{
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM{
-    flex: 0 0 80%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .BSig{
-    flex: 0 0 10%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM .IMAG{
-    flex: 0 0 80%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed80 .IMGCent .IM .INFR{
-    flex: 0 0 20%;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: #0000006c;
-  }
-  .Feed80 .IMGCent .IM .INFR #infUSR{
-    color: #ffffff;
-  }
-#fpizq{
-    position: relative;
-    width: 50%;
-    height: 50%;
-
+  color: white;
 }
-#fpcent {
-    width: 70%;
-    height: 90%;
-
-}
-#fpder {
-    position: relative;
-    width: 50%;
-    height: 50%;
-}
-
-.Feed20 .MatchB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed20 .InfoB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-  .Feed20 .DescartarB{
-    flex: 0 0 33%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-  }
-/* comienzan estilos*/
-
-.boton-redondo {
-    height: 55%;
-    width: 25%;
-    border-radius: 50%;
-    font-size: 200%;
-    text-align: center;
-    border: 1% white;
-}
-
-.boton{
-    height: auto;
-    width: 100%;
-    font-size: 200%;
-    text-align: center;
-    color: #ffffff;
-    background-color: #B14AED;
-}
-
-.Feed20 .MatchB #match {
-    color: #520036;
-    background-color: #df2935;
-}
-
-.Feed20 .DescartarB #descartar {
-    color: #520036;
-    background-color: #1e0062;
-}
-
-.Feed20 .InfoB #info {
-    color: #520036;
-    background-color: #B14AED;
-}
-
-.CTBTN .CerrarS #CerrarSesion {
-    color: #ffffff;
-    background-color: #2d0175;
-    overflow: hidden;
-}
-}
-/* Barra lateral de usuario: Foto de perfil, chats, boton de cerrar sesion*/
-/* Seccion de foto de perfil y nombre de usuario*/
