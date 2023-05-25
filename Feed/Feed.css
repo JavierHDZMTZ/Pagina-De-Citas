@@ -43,6 +43,12 @@ body, html {
   justify-content: center; 
   align-items: center;
 }
+.Feed80 .IMGCent .BReg:hover {
+  transform: translate(-20%, 0%);
+}
+.Feed80 .IMGCent .BSig:hover {
+  transform: translate(20%, 0%);
+}
 .Feed80 .IMGCent .IM {
   flex: 0 0 80%;
   height: 100%;
@@ -67,19 +73,26 @@ body, html {
 }
 .Feed80 .IMGCent .IM .INFR #infUSR {
   color: #ffffff;
+  top: 20%;
 }
+/*medias bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 @media (max-width: 1020px) {
   .Feed80 .IMGDer,
-  .Feed80 .IMGIzq,
-  .Feed80 .IMGCent {
+  .Feed80 .IMGIzq {
     flex: 0 0 0%;
     display: flex;
     justify-content: center; 
     align-items: center;
   }
+  .Feed80 .IMGCent {
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
   .boton-redondo {
-    height: 30%;
-    width: 40%;
+    height: 80%;
+    width: 60%;
     border-radius: 50%;
     font-size: 200%;
     text-align: center;
@@ -90,21 +103,21 @@ body, html {
   .Feed80 .IMGDer,
   .Feed80 .IMGIzq,
   .Feed80 .IMGCent {
-    flex: 0 0 30%;
+    flex: 0 0 33.333%;
     display: flex;
     justify-content: center; 
     align-items: center;
   }
-
   .boton-redondo {
-    height: 55%;
-    width: 25%;
+    height: 100%;
+    width: 43%;
     border-radius: 50%;
     font-size: 200%;
     text-align: center;
     border: 1% white;
   }
 }
+/*medias bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 .Feed20 .MatchB,
 .Feed20 .InfoB,
 .Feed20 .DescartarB {
@@ -120,7 +133,7 @@ body, html {
 }
 #fpcent {
   width: 70%;
-  height: 90%;
+  height: 80%;
 }
 #fpder {
   position: relative;
@@ -133,7 +146,11 @@ body, html {
   font-size: 200%;
   text-align: center;
   color: #ffffff;
-  background-color: #B14AED;
+  background-color: #b353eace;
+  border-radius: 30%;
+}
+.boton:hover{
+  background-color: #7a12b7ce;
 }
 .Feed20 .MatchB #match {
   color: #520036;
@@ -147,10 +164,20 @@ body, html {
   color: #520036;
   background-color: #B14AED;
 }
+.Feed20 .MatchB #match:hover {
+  background-color: #4e0005;
+}
+.Feed20 .DescartarB #descartar:hover {
+  background-color: #0e0030;
+}
+.Feed20 .InfoB #info:hover {
+  background-color: #320050;
+}
 .CTBTN .CerrarS #CerrarSesion {
   color: #ffffff;
   background-color: #520036;
   overflow: hidden;
+  border-radius: 30%;
 }
 .PUSR {
   display: flex;
@@ -173,5 +200,6 @@ body, html {
   display: flex;
 }
 #NPRF {
+
   color: white;
 }
