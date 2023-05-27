@@ -8,9 +8,9 @@ document.getElementById("InicioSesion").addEventListener("click", function() {
 });
 //Redireccion a la pagina de registro
 document.getElementById("Registrarse").addEventListener("click", function() {
-    window.location.href = "../Registro/Registro.php";
+    window.location.href = "../Registro/Registro.html";
 });
 //Redireccion a la pagina de informacion sobre nosotros
-document.getElementById("MasInformacion").addEventListener("click", function() {
-    window.location.href ="../Mas Informacion/Masinformacion.php";
+document.getElementById("enlace").addEventListener("click", function() {
+    window.location.href ="../Mas Informacion/Masinformacion.html";
 });
