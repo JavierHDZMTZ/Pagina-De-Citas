@@ -1,3 +1,28 @@
+<?php
+$usuario = $_GET['username'];
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "amors_database";
+
+$conn = mysqli_connect($servername, $username, $password, $database);
+
+if (!$conn) {
+    die("Error de conexión: " . mysqli_connect_error());
+}
+$sql = "SELECT fotoPerfil, nombre, edad, intereses FROM usuarios WHERE usuario = '$usuario'";
+$resultado = $conn->query($sql);
+
+if ($resultado->num_rows > 0) {
+    $fila = $resultado->fetch_assoc();
+
+    echo "<script>document.getElementById('fpp').src = 'data:image/jpeg;base64," . base64_encode($fila['foto_perfil']) . "';</script>";
+
+    echo "<script>document.getElementById('NPRF').innerHTML = '" . $fila['nombre'] . "';</script>";
+    echo "<script>document.getElementById('infUSR').innerHTML = '" . $fila['nombre'] . " y " . $fila['edad'] . "<br>" . $fila['intereses'] . "';</script>";
+}
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -57,5 +82,6 @@
                 </div>
             </div>
         </div>
+        <script src="Feed.js"></script>
     </body>
 </html>
