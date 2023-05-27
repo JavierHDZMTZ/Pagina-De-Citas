@@ -73,7 +73,6 @@ body, html {
 }
 .Feed80 .IMGCent .IM .INFR #infUSR {
   color: #ffffff;
-  top: 20%;
 }
 /*medias bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb*/
 @media (max-width: 1020px) {
@@ -165,12 +164,14 @@ body, html {
   background-color: #B14AED;
 }
 .Feed20 .MatchB #match:hover {
+  color: #ffffff;
   background-color: #4e0005;
 }
 .Feed20 .DescartarB #descartar:hover {
   background-color: #0e0030;
 }
 .Feed20 .InfoB #info:hover {
+  color: #ffffff;
   background-color: #320050;
 }
 .CTBTN .CerrarS #CerrarSesion {
@@ -200,6 +201,5 @@ body, html {
   display: flex;
 }
 #NPRF {
-
   color: white;
 }
